@@ -47,10 +47,14 @@ def number_to_short_month_name(num1)
   return result.slice(0..2)
 end
 
-def test_volume_of_cube(length_of_cube)
-  return length_of_cube ** length_of_cube
+def volume_of_cube(length_of_cube)
+  return length_of_cube ** 3
 end
 
-def test_volume_of_sphere(radius)
-  return volume = (4.0 / 3.0) * Math::PI * (radius ** radius)
+def volume_of_sphere(radius)
+   return volume = ((4.0 / 3.0) * Math::PI * (radius ** 3)).round(2)
+end
+
+def fahrenheit_to_celsius(fnum)
+  return ((fnum - 32)*0.5556).round(2)
 end
